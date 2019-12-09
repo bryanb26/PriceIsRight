@@ -16,7 +16,7 @@
 
   var options = {
     method: 'GET',
-    url: `https://api.bestbuy.com/v1/products/${randomSku(01000000,10000000)}.json?show=sku,name,salePrice&apiKey=pGkFlneZilafA6UKWELwcNc3`,
+    url: `https://api.bestbuy.com/v1/products/${randomSku(skuArray)}.json?show=sku,name,salePrice&apiKey=pGkFlneZilafA6UKWELwcNc3`,
     json: true
     
   };
@@ -25,10 +25,11 @@
     console.log(body.sku)
   })
 
-  
 
-  function randomSku(min, max) { 
-    return Math.floor(Math.random() * (max - min + 1) + min);
-  }
+const skuArray = [6316142,5721014,6191401,6261177,6255368,5353902,6355044,5706633,6302020,6355731];
 
-console.log(randomSku(01000000,10000000));
+function randomSku(skuArray) {
+  return skuArray[Math.floor(Math.random() * skuArray.length)];
+}
+
+randomSku(skuArray);
