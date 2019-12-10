@@ -1,0 +1,23 @@
+{
+  "name": "priceisright",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "request": "^2.88.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bryanb26/PriceIsRight.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bryanb26/PriceIsRight/issues"
+  },
+  "homepage": "https://github.com/bryanb26/PriceIsRight#readme",
+  "description": ""
+}
