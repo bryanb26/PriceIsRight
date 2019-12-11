@@ -42,16 +42,13 @@ promise.then(async function(data) {
     x.addEventListener('click', e => {
       console.log(e.target.innerText)
       if (e.target.innerText == actualValue) {
-        console.log('correct');
+        alert("Correct!");
       }else{
-        console.log('wrong');
+        alert("Wrong!");
       }
     })
   })
-})
-
-
-
+});
 
 function clickListener(el, run){
   document.querySelectorAll(el).forEach(el => {
