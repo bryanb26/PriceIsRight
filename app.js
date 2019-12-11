@@ -41,5 +41,11 @@ let promise = apiCall(randSku);
 
 promise.then(function(data) {
   document.querySelector('.question').innerHTML = `Is the price of ${data.name} greater or less than $${randNumber}?`;
+  if (data.salePrice > randNumber){
+    higher = true;
+  }
+  else{
+    lower = true;
+  }
 })
 
