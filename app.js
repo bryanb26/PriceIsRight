@@ -34,7 +34,7 @@ console.log(apiCall().then(async x => {
 let actualValue;
 
 async function createQuestion(data) {
-  document.querySelector('.question').innerHTML = `Is the price of ${data.name} higher or lower than $${randNumber}?`;
+  document.querySelector('.question').innerHTML = `Is the real price of ${data.name} higher or lower than $${randNumber}?`;
   console.log(data.salePrice)
   if(data.salePrice > randNumber){
     actualValue = "Higher";

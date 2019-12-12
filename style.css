@@ -15,7 +15,7 @@
 
 html{
     color: black;
-    font-family: 'Press Start 2P', cursive;
+    background-image: url(background.jpg);
 }
 
 body{
@@ -32,7 +32,7 @@ html, body {
 
 .container{
     width: 80vw;
-    background-color:rgba(255,255,255, .7);
+    background-color:rgba(255,255,255, .8);
     border-radius: 2rem;
     height: 75vh;
     margin-top: 1rem;
@@ -50,13 +50,13 @@ html, body {
     width: 30vw;
     height: 10vh;
     color: white;
-    background-color: rgba(0,0,0,.9);
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 2rem;
     font-size: 2rem;
+    font-family: 'Luckiest Guy', cursive;
 }
 
 
@@ -70,37 +70,32 @@ html, body {
     width: 80vw;
     height: 15vh;
     font-size: 4rem;
+    font-family: 'Lakki Reddy', cursive;
     
 }
 
-.trivia_scoreboard_style{
+.question{
     display: flex;
     flex-direction: column;
-    color: black;
-    background-color: white;
-    width: fit-content;
-    padding: .25rem;
-    border-style: solid;
-    border-width: .25rem;
-    border-color: black;
-    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 4rem;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.4rem;
 }
 
-.trivia_scoreboard_holder{
-    width: 70vw;
-    display: flex;
-    justify-content: flex-end;
+.picture{
+    height: 15rem;
+    width: 15rem;
+    background-image: url(bob.png);
+    align-self: center;
 }
 
-.trivia_question{
-    color: black;
-    background-color: white;
-    width: 70vw;
-    height: 5vh;
-    padding: .25rem;
-    border-style: solid;
-    border-width: .25rem;
-    border-color: black;
-    padding: .25rem;
+#choice_1{
+    background-color: green;
 }
 
+#choice_2{
+    background-color:red;
+}
