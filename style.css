@@ -46,7 +46,7 @@ html, body {
     margin-bottom: 5vh;
 }
 
-.trivia_answer_choice{
+.choice{
     width: 30vw;
     height: 10vh;
     color: white;
