@@ -1,18 +1,3 @@
-/*  async function productCall() {
-    try {
-      let data = await fetch(`https://api.bestbuy.com/v1/products/8880044.json?show=sku,name,salePrice&apiKey=pGkFlneZilafA6UKWELwcNc3`, {
-        method: 'GET',
-        body: JSON.stringify(data);
-      });
-      console.log(data);
-      return data = products
-    } catch (err) {
-      console.log(err);
-    }
-  }
-
-  productCall();  */
-//var request = require('request');
 
 let skuArray = [6316142,5721014,6191401,6261177,6255368,5353902,6355044,5706633,6302020,6355731,6355880,5712662,6365319,6323967,6246921,6279006,6201408,6394154,6367507];
 
@@ -27,9 +12,6 @@ async function apiCall(){
   return await req.json()
 };
 
-console.log(apiCall().then(async x => {
-  console.log(x)
-}))
 
 let actualValue;
 
@@ -43,6 +25,7 @@ async function createQuestion(data) {
   }
   console.log(actualValue)
 }
+
 function site() {
   let promise = apiCall()
   promise.then(x => {createQuestion(x)}).then(async x => {
